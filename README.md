@@ -27,10 +27,10 @@ Please see the [releases](/releases) section to find the current Gerber files fo
 To be added
 
 # Parts List
-Please see [here](/PartsList.md)
+Please see [here](/Guides/PartsList.md)
 
 # Assembly Guide
-Please see [here](/AssemblyGuide.md)
+Please see [here](/Guides/AssemblyGuide.md)
 
 # What else
 Notice how nowhere in this guide I mentioned the X and Y axis until now? Well, for good reason. If you wanted to you could build a board for the E and Z axis and use it in parallel to a X and Y board (or just use the E and Z board if you're weird like that I suppose). The Z motor plug will need to be split into 2 new plugs (one for ZL and ZR). The board labels the two sockets with X and Y identifiers, but this is more so you can trace which plug goes where. Obvisouly just connect either the X or Y plugs to the E or Z solder pads on the Rambo if you're planning on doing this.
