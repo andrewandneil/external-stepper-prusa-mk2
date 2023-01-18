@@ -3,7 +3,10 @@ Adds the ability to use external TMC stepper drivers on the Prusa MK2/S/2.5 (any
 
 ## Purpose
 Since the Mini Rambo that powers the original line of Prusas was released, stepper driver technology has come a long way. Now days, the `A4982`s that are hard soldered onto the board are loader and less accurate than more modern offerings from Trinamic.
-The mission with this is to breakout the solder pads on the back of the Mini Rambo, to a board where there is a socket for standard, off the shelf stepper driver boards. 
+
+The mission with this is to take the solder pads on the back of the Mini Rambo, to a board where there is a socket for standard, off the shelf stepper driver boards. 
+
+Upon seeing a certain other design on the internet that did the same thing, but was closed source, I decided to create my own design from scratch, and make it open source! You will find all KiCAD PCB Design files, along with the F3D files and STEP files for the case I have created. 
 
 ## Functionality
 Tested mostly with the `TMC2208` drivers, however, `TMC2209`s, `TMC2130`s and `TMC2100`s (may require to be in their 'standalone' mode) have all been tested and confirmed to work with this board and the printer. However, do note the graphic towards the bottom left of the PCB for the correct positioning of the jumpers for your stepper drivers.
@@ -25,6 +28,15 @@ Please see the [releases](https://github.com/andrewandneil/external-stepper-prus
 
 ## Pictures
 To be added
+
+## Cases
+
+### My Case
+As of the moment yet to be finalised
+
+### Other People's Cases
+In the offchance that someone either, modifies, redesigns, or creates from sctach a new case or related accessory, I'll do my best to add them here.
+If you're one of amazing community that might create a case, get in touch with me and I'll link it here, along with any credit due.
 
 ## Parts List
 Please see [here](/Guides/PartsList.md)
