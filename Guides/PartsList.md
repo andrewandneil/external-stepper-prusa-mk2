@@ -2,6 +2,7 @@
 
 ### REQUIRED:
   - 1x printer with a functional Mini Rambo.
+  - 1x PCB (find the gerber files for production [here](https://github.com/andrewandneil/external-stepper-prusa-mk2/releases/latest)).
   - 1x 2x8 2.54mm Pitch IDC cable.
   - 1x 2x8 2.54mm Pitch IDC PCB through-hole socket.
   - 2x stepper drivers (on breakout boards) of your choice ([see here for a list of working drivers](#your-stepper-driver-options)).
