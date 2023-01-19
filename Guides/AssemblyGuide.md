@@ -17,14 +17,31 @@ Optionally:
 <img src="/Photos/Photos%20for%20Guide/01_PartsLaidOut.png" width="400">
 
 ## Step 2
-Now you'll need to solder these to the board. I'm not going to baby step you through this step, as you should already know how to do this.
+Now you'll need to solder everything to the board. I'm not going to baby step you through this step, as you should already know how to do this.
 
 A general rule of thumb for soldering components to a PCB is to start with the shortest components first and work your way up.
 
 Here you can also choose to add the 1x8 female pin headers or just solder the chips directly to the board. (I recommend using the pin headers).
 
 <img src="/Photos/Photos%20for%20Guide/02_SolderedBoard.png" width="400">
-<img src="/Photos/Photos%20for%20Guide/02_JumperConfigs.svg" width="400">
+
+You will also need to set your jumper configurations now. If you look at the bottom left of the PCB (also shown in image below) you should see a diagram for how you will need to do it. Make sure you configure these correctly for your driver! Incorrect configuration will likely cause wildly incorrect axis movements.
+
+<img src="/Photos/Photos%20for%20Guide/02_JumperConfigs.png" width="400">
+
+Make sure your jumpers are configured for your chips as below:
+
+**`TMC2208` or `TMC2209`:**
+
+<img src="/Photos/Photos%20for%20Guide/02_TMC22089.svg" width="400">
+
+**`TMC2130` or `TMC2100` spreadCycle:**
+
+<img src="/Photos/Photos%20for%20Guide/02_spreadCycle.svg" width="400">
+
+**`TMC2130` or `TMC2100` stealthChop:**
+
+<img src="/Photos/Photos%20for%20Guide/02_stealthChop.svg" width="400">
 
 ## Step 3
 Now you need to take your 8 pin IDC cable and cut off one end. Hopefully, you'll have a cable where the 2 ends point different directions. You'll most likely want the direction that allows the cable to come directly away from your PCB rather than needing to over it:
@@ -130,8 +147,17 @@ Take your Mini Rambo and place it back into the Mini Rambo's housing. Place the 
 ## Step 9
 Now you're going to want to plug all the connectors into the board.
 
-You may already know where everything goes but here's a helpful image if need be:
+You may already know where everything goes but here's a reminder:
+  1. `Board Input` IDC Connector. This is where you plug in the IDC cable that you soldered to the back of the Mini Rambo
+  2. `X Motor` Molex SL. This is where the plug for the X axis stepper goes into.
+  3. `Y Motor` Molex SL. This is where the plug for the Y axis stepper goes into.
+  4. `X Driver` x2 1x8 Female Headers. This is where you plug in the stepper driver for your X axis.
+  5. `Y Driver` x2 1x8 Female Headers. This is where you plug in the stepper driver for your Y axis.
+  6. 2x3 Male Header. This is where you will need to set your jumper configurations. See [Step 2](#step-2) if you havent configured them already.
+  7. `Fan` 1x3 (if installed). This is where you can optionally plug in a fan.
+  8. `12/24V GND` 2 port Terminal. This is where you should have placed your power wires from [Step 9](#step-9). If you're using my case you will need to remove them for the next step.
 
+<img src="/Photos/Photos%20for%20Guide/09_Connectors.png" width="400">
 
 ## Step 10
 
